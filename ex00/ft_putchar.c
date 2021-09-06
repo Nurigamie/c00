@@ -1,11 +1,12 @@
 #include <stdio.h>
-int main(int argc, char *argv[])
+
+void	ft_putchar(char c)
 {
-    char lettre = 0;
-
-    scanf("%c", &lettre);
-    printf("%c\n", lettre);
-
-    return 0;
+	write(1, &c, 1);
 }
+
+int	main(void)
+{	
+	ft_putchar('a');
+	return (0);
 }

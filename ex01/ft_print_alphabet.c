@@ -1,15 +1,16 @@
 #include <stdio.h>
-void ft_print_alphabet(void);
-int main ()
-{
-        ft_print_alphabet();
-        return(0);
+
+void ft_print_alphabet(void){
+char ch = 'a';
+    while(ch <= 'z')
+    {
+    write(1, &ch, 1);
+	ch++;
+    }
 }
-void ft_print_alphabet()
+
+	int main(void)
 {
-        char ch;
-        for(ch = 'a' ; ch <= 'z' ; ch++)
-        {
-                 putchar(ch);
-        }
+	ft_print_alphabet();
+	return (0);
 }
