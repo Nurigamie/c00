@@ -3,15 +3,15 @@
 void ft_print_reverse_alphabet(void)
 {
         char ch = 'z';
-    while(ch <= 'a')
+    while(ch >= 'a')
 {
-    putchar(ch);
-	ch++;
+    write(1, &ch, 1);
+	ch--;
 	    }
 }
 
-int main ()
+int main(void)
 {
-        ft_print_alphabet();
+        ft_print_reverse_alphabet();
         return(0);
 }

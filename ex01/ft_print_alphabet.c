@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-void ft_print_alphabet(void){
+void ft_print_alphabet(void)
+{
 char ch = 'a';
-    while(ch <= 'z')
-    {
+    while(ch <= 'z'){
     write(1, &ch, 1);
 	ch++;
     }
