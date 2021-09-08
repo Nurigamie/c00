@@ -2,12 +2,10 @@
 
 void ft_is_negative(int n)
 {
-	while(n>-5){
-		while(n<0){
+	if(n>-1){
 		printf("N");
 	}
-	printf("P");
-	n--;
+	else{printf("P");
 }
 }
 int main(void){
