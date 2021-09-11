@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 
 void	ft_putchar(char c)
 {
@@ -28,7 +28,7 @@ void	ft_putnbr(int nb)
 	{
 		ft_putchar(nb);
 	}
-	else 
+	else
 	{
 		ft_putnbr(nb / 10);
 		nb = nb % 10;
@@ -36,8 +36,8 @@ void	ft_putnbr(int nb)
 	}
 }
 
-int	main(void)
-{
-	ft_putnbr(42);
-	return (0);
-}
+// int	main(void)
+// {
+// 	ft_putnbr(42);
+// 	return (0);
+// }

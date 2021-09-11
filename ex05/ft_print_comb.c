@@ -6,10 +6,11 @@
 /*   By: mbuchet <mbuchet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/11 17:29:55 by mbuchet           #+#    #+#             */
-/*   Updated: 2021/09/11 17:29:55 by mbuchet          ###   ########.fr       */
+/*   Updated: 2021/09/11 20:34:55 by mbuchet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
+
 void	write_nb(int i, int j, int k)
 {
 	char	tab[5];
@@ -19,17 +20,18 @@ void	write_nb(int i, int j, int k)
 	tab[2] = k + '0';
 	if (i == 7 && j == 8 && k == 9)
 	{
-	tab[3] = '.';
-	tab[4];
-	write(1, &tab, 4);
+		tab[3] = '.';
+		tab[4];
+		write(1, &tab, 4);
 	}
-	else 
+	else
 	{
-	tab[3] = ',';
-	tab[4] = ' '; 
-	write(1, &tab, 4);
+		tab[3] = ',';
+		tab[4] = ' ';
+		write(1, &tab, 5);
+	}
 }
-}
+
 void	ft_print_comb(void)
 {
 	int	i;
