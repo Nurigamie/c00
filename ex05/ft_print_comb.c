@@ -9,20 +9,27 @@
 /*   Updated: 2021/09/11 17:29:55 by mbuchet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
-
+#include <unistd.h>
 void	write_nb(int i, int j, int k)
 {
-	char	tab[4];
+	char	tab[5];
 
 	tab[0] = i + '0';
 	tab[1] = j + '0';
 	tab[2] = k + '0';
+	if (i == 7 && j == 8 && k == 9)
+	{
+	tab[3] = '.';
+	tab[4];
+	write(1, &tab, 4);
+	}
+	else 
+	{
 	tab[3] = ',';
+	tab[4] = ' '; 
 	write(1, &tab, 4);
 }
-
+}
 void	ft_print_comb(void)
 {
 	int	i;
@@ -50,10 +57,8 @@ void	ft_print_comb(void)
 	}
 }
 
-/**
-**int	main(void)
-**{
-**	ft_print_comb();
-**	return (0);
-**}
-**/
+int	main(void)
+{
+	ft_print_comb();
+	return (0);
+}

@@ -24,11 +24,11 @@ void	ft_putnbr(int nb)
 		nb = -nb;
 		ft_putchar(nb);
 	}
-	else if (nb > 0 && nb <= 9 || nb == 0)
+	else if ((nb > 0 && nb <= 9) || nb == 0)
 	{
 		ft_putchar(nb);
 	}
-	else
+	else 
 	{
 		ft_putnbr(nb / 10);
 		nb = nb % 10;
@@ -36,8 +36,8 @@ void	ft_putnbr(int nb)
 	}
 }
 
-// int	main(void)
-// {
-// 	ft_putnbr(42);
-// 	return (0);
-// }
+int	main(void)
+{
+	ft_putnbr(42);
+	return (0);
+}

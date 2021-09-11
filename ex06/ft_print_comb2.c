@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 
 void	write_nb(int i, int j)
 {
@@ -24,7 +24,14 @@ void	write_nb(int i, int j)
 	tab[5] = ',';
 	tab[6] = ' ';
 	tab[7] = '\0';
-	write(1, &tab, 10);
+	if(i==98&&j==99){
+		tab[5] = '.';
+		tab[6];
+		tab[7];
+	write(1, &tab, 8);
+	}else{
+	write(1, &tab, 8);
+}
 }
 
 void	ft_print_comb2(void)
@@ -45,10 +52,9 @@ void	ft_print_comb2(void)
 		++i;
 	}
 }
-/*
-**int	main(void)
-**{
-**	ft_print_comb2();
-**	return (0);
-**}
-*/
+
+int	main(void)
+{
+	ft_print_comb2();
+	return (0);
+}
