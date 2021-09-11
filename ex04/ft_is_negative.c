@@ -1,14 +1,20 @@
 #include <stdio.h>
 
-void ft_is_negative(int n)
+void	ft_is_negative(int n)
 {
-	if(n>-1){
-		printf("N");
+	if (n > -1)
+	{
+		write (1, "N", 1);
 	}
-	else{printf("P");
+	else
+	{
+		write (1, "P", 1);
+	}
 }
-}
-int main(void){
-	ft_is_negative(5);
-	return (0);
-}
+/**
+**int	main(void)
+**{
+**	ft_is_negative(5);
+**	return (0);
+**}
+**/

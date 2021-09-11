@@ -1,18 +1,13 @@
 #include <stdio.h>
 
-void ft_print_numbers(void)
+void	ft_print_numbers(void)
 {
-	int nb = 1;
-    while(nb <= 10)
-    {
-    printf("%u",nb);
-	nb++;
-    }
+	write(1, "123456789", 10);
 }
-
-	int main(void)
-{
-	ft_print_numbers();
-	return (0);
-}
-
+/**
+**int	main(void)
+**{
+**	ft_print_numbers();
+**	return (0);
+**}
+**/
