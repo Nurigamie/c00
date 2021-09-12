@@ -19,21 +19,18 @@ void	ft_putchar(char c)
 
 void	ft_putnbr(int nb)
 {
+	char	tab[1];
+
 	if (nb < 0)
 	{
 		nb = -nb;
-		ft_putchar(nb);
 	}
-	else if ((nb > 0 && nb <= 9) || nb == 0)
-	{
-		ft_putchar(nb);
-	}
-	else
+	else if (nb > 9)
 	{
 		ft_putnbr(nb / 10);
-		nb = nb % 10;
-		ft_putchar(nb);
 	}
+	nb = nb % 10;
+	ft_putchar(nb + 48);
 }
 
 // int	main(void)
